@@ -12,18 +12,6 @@ A simple Flappy Bird clone built in Java, featuring custom graphics and smooth g
 
 ---
 
-### 📷 Screenshots
-
-<p align="center">
-  <img src="FlappyBird.png" alt="Flappy Bird Sprite" width="80"/>
-  <img src="flappybirdbg.png" alt="Background" width="300"/>
-  <br>
-  <img src="bottompipe.png" alt="Bottom Pipe" height="200"/>
-  <img src="toppipe.png" alt="Top Pipe" height="200"/>
-</p>
-
----
-
 ### 🚀 Getting Started
 
 #### Prerequisites
