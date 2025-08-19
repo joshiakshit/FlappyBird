@@ -1,4 +1,3 @@
-// Pipe.java
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Rectangle;
@@ -6,7 +5,7 @@ import javax.swing.ImageIcon;
 
 public class Pipe {
     public int x, y, width, height;
-    public boolean passed = false; // To track for scoring
+    public boolean passed = false;
     private Image topPipeImage;
     private Image bottomPipeImage;
 
@@ -14,15 +13,21 @@ public class Pipe {
         this.x = startX;
         this.width = Constants.PIPE_WIDTH;
         this.height = Constants.PIPE_HEIGHT;
-
-        // *** THIS IS THE CORRECTED LOGIC ***
-        // We calculate a random position for the bottom of the top pipe,
-        // ensuring there's always enough room on screen.
-        int topPipeBottomY = 120 + (int)(Math.random() * 300); // Random int between 120 and 420
-        this.y = topPipeBottomY - Constants.PIPE_HEIGHT;
+        randomizeHeight();
 
         this.topPipeImage = new ImageIcon(getClass().getResource("/toppipe.png")).getImage();
         this.bottomPipeImage = new ImageIcon(getClass().getResource("/bottompipe.png")).getImage();
+    }
+
+    public void randomizeHeight() {
+        int topPipeBottomY = 120 + (int)(Math.random() * 300);
+        this.y = topPipeBottomY - Constants.PIPE_HEIGHT;
+    }
+
+    public void reset(int newX) {
+        this.x = newX;
+        this.passed = false;
+        randomizeHeight();
     }
 
     public void update() {
@@ -30,9 +35,7 @@ public class Pipe {
     }
 
     public void draw(Graphics g) {
-        // Top Pipe
         g.drawImage(topPipeImage, x, y, width, height, null);
-        // Bottom Pipe
         g.drawImage(bottomPipeImage, x, y + height + Constants.PIPE_GAP, width, height, null);
     }
 

@@ -1,4 +1,3 @@
-// Bird.java
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Rectangle;
@@ -19,11 +18,8 @@ public class Bird {
     }
 
     public void update() {
-        // Apply gravity
         velocityY += Constants.GRAVITY;
         y += velocityY;
-
-        // Prevent bird from going off the top of the screen
         y = Math.max(y, 0);
     }
 
