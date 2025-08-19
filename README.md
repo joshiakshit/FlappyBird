@@ -37,10 +37,10 @@ javac *.java
 3. Run the game:
 
 ```bash
-java App
+java GamePanel
 ```
 
-> **Note**: Replace `App` with your main class if you renamed it.
+> **Note**: Replace `GamePanel` with your main class if you renamed it.
 
 ---
 
@@ -55,7 +55,7 @@ java App
 
 ```
 src/
-├── App.java            # Entry point
+├── GamePanel.java            # Entry point
 ├── FlappyBird.java     # Game logic and rendering
 assets/
 ├── flappybird.png      # Bird sprite
