@@ -1,73 +1,33 @@
-## 🐦 FlappyBird Java
+# Flappy Bird
 
-A simple Flappy Bird clone built in Java, featuring custom graphics and smooth gameplay mechanics.
+A desktop implementation of the classic Flappy Bird game, developed using Java and the Swing library for the graphical user interface. This project is a demonstration of game loop design, 2D graphics rendering, and user input handling in a Java environment.
 
----
+## Features
 
-### 🎮 Features
+  * Classic side-scrolling gameplay.
+  * Dynamic pipe generation with randomized vertical placement.
+  * Score tracking for pipes successfully passed.
+  * Responsive controls via both keyboard (spacebar) and mouse clicks.
+  * Game over detection and a restart option.
 
-* Classic Flappy Bird-style gameplay
-* Handcrafted graphics including pipes, background, and bird
-* Written purely in Java with no external game engine
+## Requirements
 
----
+To run this game, you must have the **Java Runtime Environment (JRE) version 8 or higher** installed on your system.
 
-### 🚀 Getting Started
+## How to Play
 
-#### Prerequisites
+The game is distributed as a standalone executable `.jar` file.
 
-* Java JDK (8 or higher)
-* Basic familiarity with running Java applications
+1.  Navigate to the **[Releases page](https://www.google.com/search?q=https://github.com/joshiakshit/FlappyBird/releases)** of this repository.
+2.  Download the latest `.jar` file (e.g., `FlappyBird.jar`) from the **Assets** section.
+3.  Double-click the downloaded `.jar` file to launch the game.
 
-#### Installation & Run
+## Controls
 
-1. Clone this repository:
+  * **Jump:** `Spacebar` or `Mouse Click`
+  * **Restart:** `R` (on the "Game Over" screen) or `Mouse Click`
 
-```bash
-git clone https://github.com/joshiakshit/FlappyBird.git
-cd FlappyBird/src
-```
+## Built With
 
-2. Compile the Java source files:
-
-```bash
-javac *.java
-```
-
-3. Run the game:
-
-```bash
-java GamePanel
-```
-
-> **Note**: Replace `GamePanel` with your main class if you renamed it.
-
----
-
-### 🎮 Controls
-
-* **Spacebar** — make the bird flap
-* Avoid the pipes; pass through the gaps to score!
-
----
-
-### 🗂 Project Structure
-
-```
-src/
-├── GamePanel.java            # Entry point
-├── FlappyBird.java     # Game logic and rendering
-assets/
-├── flappybird.png      # Bird sprite
-├── flappybirdbg.png    # Background image
-├── toppipe.png         # Top pipe
-├── bottompipe.png      # Bottom pipe
-```
-
----
-
-### 📜 License
-
-This project is open-source under the [MIT License](LICENSE).
-
----
+  * **Java**: Core programming language.
+  * **Java Swing/AWT**: For the graphical user interface, rendering, and event handling.
